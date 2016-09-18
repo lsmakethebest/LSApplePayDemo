@@ -16,6 +16,7 @@
 		287CC7A21D7D72FE005990B5 /* applePayDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 287CC7A11D7D72FE005990B5 /* applePayDemoTests.m */; };
 		287CC7AD1D7D72FE005990B5 /* applePayDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 287CC7AC1D7D72FE005990B5 /* applePayDemoUITests.m */; };
 		287CC7BC1D7D7724005990B5 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287CC7BB1D7D7724005990B5 /* PassKit.framework */; };
+		287CC7C41D7F95C4005990B5 /* InpPayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 287CC7C31D7F95C4005990B5 /* InpPayViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		287CC7AE1D7D72FE005990B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		287CC7BA1D7D7611005990B5 /* applePayDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = applePayDemo.entitlements; sourceTree = "<group>"; };
 		287CC7BB1D7D7724005990B5 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		287CC7C21D7F95C4005990B5 /* InpPayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InpPayViewController.h; sourceTree = "<group>"; };
+		287CC7C31D7F95C4005990B5 /* InpPayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InpPayViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				287CC7951D7D72FE005990B5 /* LaunchScreen.storyboard */,
 				287CC7981D7D72FE005990B5 /* Info.plist */,
 				287CC7871D7D72FE005990B5 /* Supporting Files */,
+				287CC7C21D7F95C4005990B5 /* InpPayViewController.h */,
+				287CC7C31D7F95C4005990B5 /* InpPayViewController.m */,
 			);
 			path = applePayDemo;
 			sourceTree = "<group>";
@@ -283,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				287CC78F1D7D72FE005990B5 /* ViewController.m in Sources */,
+				287CC7C41D7F95C4005990B5 /* InpPayViewController.m in Sources */,
 				287CC78C1D7D72FE005990B5 /* AppDelegate.m in Sources */,
 				287CC7891D7D72FE005990B5 /* main.m in Sources */,
 			);
@@ -428,7 +434,9 @@
 				CODE_SIGN_ENTITLEMENTS = applePayDemo/applePayDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = U7SJ4KA3L8;
 				INFOPLIST_FILE = applePayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuaichengwuliu.applePayDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,7 +451,9 @@
 				CODE_SIGN_ENTITLEMENTS = applePayDemo/applePayDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = U7SJ4KA3L8;
 				INFOPLIST_FILE = applePayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuaichengwuliu.applePayDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,6 +526,7 @@
 				287CC7B31D7D72FE005990B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		287CC7B41D7D72FE005990B5 /* Build configuration list for PBXNativeTarget "applePayDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +535,7 @@
 				287CC7B61D7D72FE005990B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		287CC7B71D7D72FE005990B5 /* Build configuration list for PBXNativeTarget "applePayDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +544,7 @@
 				287CC7B91D7D72FE005990B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

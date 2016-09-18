@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 #import <PassKit/PassKit.h>
+#import "InpPayViewController.h"
+
+#import <StoreKit/StoreKit.h>
 @interface ViewController ()<PKPaymentAuthorizationViewControllerDelegate>
 {
     NSMutableArray *summaryItems;
@@ -23,16 +26,63 @@
     
     UIButton *btn=[[UIButton alloc]init];
     btn.backgroundColor=[UIColor colorWithRed:0.196 green:0.371 blue:0.248 alpha:1.000];
-    [btn setTitle:@"开始支付" forState:UIControlStateNormal];
+    [btn setTitle:@"ApplePay" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(buyNow) forControlEvents:UIControlEventTouchUpInside];
     btn.frame=CGRectMake(100, 100, 100, 50);
     [self.view addSubview:btn];
+   
+    UIButton *btn2=[[UIButton alloc]init];
+    btn2.backgroundColor=[UIColor colorWithRed:0.196 green:0.371 blue:0.248 alpha:1.000];
+    [btn2 setTitle:@"内购" forState:UIControlStateNormal];
+    [btn2 addTarget:self action:@selector(inpay) forControlEvents:UIControlEventTouchUpInside];
+    btn2.frame=CGRectMake(100, 200, 100, 50);
+    [self.view addSubview:btn2];
+    
+    
+    
+    UIButton *btn3=[[UIButton alloc]init];
+    btn3.backgroundColor=[UIColor colorWithRed:0.196 green:0.371 blue:0.248 alpha:1.000];
+    [btn3 setTitle:@"内嵌应用商店" forState:UIControlStateNormal];
+    [btn3 addTarget:self action:@selector(appstore) forControlEvents:UIControlEventTouchUpInside];
+    btn3.frame=CGRectMake(100, 300, 150, 50);
+    [self.view addSubview:btn3];
+    
+}
+
+#pragma mark ---------------  内购 ------------------
+-(void)inpay
+{
+    [self.navigationController pushViewController:[[InpPayViewController alloc]init] animated:YES];
+    
+}
+#pragma mark - 内嵌应用商店
+-(void)appstore
+{
+    SKStoreProductViewController *storeProductVC = [[SKStoreProductViewController alloc] init];
+    storeProductVC.delegate = self;
+    
+    NSDictionary *dict = [NSDictionary dictionaryWithObject:@"333206289" forKey:SKStoreProductParameterITunesItemIdentifier];
+    [storeProductVC loadProductWithParameters:dict completionBlock:^(BOOL result, NSError *error) {
+        if (result) {
+            [self presentViewController:storeProductVC animated:YES completion:nil];
+        }
+    }];
+
+}
+#pragma mark - SKStoreProductViewControllerDelegate
+- (void)productViewControllerDidFinish:(SKStoreProductViewController *)viewController {
+    [viewController dismissViewControllerAnimated:YES completion:^{
+    }];
 }
 
 
 
 
+#pragma mark ---------------  ApplePay  --------------
+ 
 - (void)buyNow{
+    
+
     if (![PKPaymentAuthorizationViewController class]) {
         //PKPaymentAuthorizationViewController需iOS8.0以上支持
         NSLog(@"操作系统不支持ApplePay，请升级至9.0以上版本，且iPhone6以上设备才支持");
@@ -159,7 +209,7 @@
     //等待服务器返回结果后再进行系统block调用
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         //模拟服务器通信
-        completion(PKPaymentAuthorizationStatusFailure);
+        completion(PKPaymentAuthorizationStatusSuccess);
     });
     
     

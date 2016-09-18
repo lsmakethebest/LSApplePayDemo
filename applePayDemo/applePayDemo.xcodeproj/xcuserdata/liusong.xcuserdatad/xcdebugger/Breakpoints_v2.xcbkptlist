@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "applePayDemo/ViewController.m"
-            timestampString = "494822242.873137"
+            timestampString = "495874496.051802"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
             landmarkName = "-paymentAuthorizationViewController:didAuthorizePayment:completion:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "applePayDemo/ViewController.m"
-            timestampString = "494822242.873137"
+            timestampString = "495874496.051802"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
+            startingLineNumber = "218"
+            endingLineNumber = "218"
             landmarkName = "-paymentAuthorizationViewControllerDidFinish:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,13 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "applePayDemo/ViewController.m"
-            timestampString = "494765281.809835"
+            timestampString = "495874496.051802"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
             landmarkName = "-paymentAuthorizationViewController:didAuthorizePayment:completion:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -58,13 +58,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "applePayDemo/ViewController.m"
-            timestampString = "494822242.873137"
+            timestampString = "495874496.051802"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
             landmarkName = "-paymentAuthorizationViewController:didAuthorizePayment:completion:"
-            landmarkType = "5">
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "applePayDemo/ViewController.m"
+            timestampString = "495874512.88006"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "-productViewControllerDidFinish:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController productViewControllerDidFinish:]"
+                  moduleName = "applePayDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liusong/Desktop/github/LSApplePayDemo/applePayDemo/applePayDemo/ViewController.m"
+                  timestampString = "495874513.098771"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__49-[ViewController productViewControllerDidFinish:]_block_invoke"
+                  moduleName = "applePayDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liusong/Desktop/github/LSApplePayDemo/applePayDemo/applePayDemo/ViewController.m"
+                  timestampString = "495874513.100082"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
